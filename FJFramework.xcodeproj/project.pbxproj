@@ -13,6 +13,7 @@
 		AE758F1A1F05DE380023DD2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE758F181F05DE380023DD2A /* LaunchScreen.storyboard */; };
 		AE758F251F05DE380023DD2A /* FJFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE758F241F05DE380023DD2A /* FJFrameworkTests.m */; };
 		AE758F301F05DE380023DD2A /* FJFrameworkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE758F2F1F05DE380023DD2A /* FJFrameworkUITests.m */; };
+		CC1FF685BCE80E6E8C4E55EB /* libPods-FJFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20209CF3C1AB50E04B92AA48 /* libPods-FJFramework.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20209CF3C1AB50E04B92AA48 /* libPods-FJFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FJFramework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		549AF5513E363785BF35EFAB /* Pods-FJFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FJFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-FJFramework/Pods-FJFramework.release.xcconfig"; sourceTree = "<group>"; };
+		85906DC20EA75F5D4CC263AD /* Pods-FJFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FJFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FJFramework/Pods-FJFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		AE758F071F05DE380023DD2A /* FJFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FJFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE758F0B1F05DE380023DD2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AE758F0D1F05DE380023DD2A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC1FF685BCE80E6E8C4E55EB /* libPods-FJFramework.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +78,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A9A6277F4F17976F53A9681 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20209CF3C1AB50E04B92AA48 /* libPods-FJFramework.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5DF7CA34661D2A1B70F9440B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85906DC20EA75F5D4CC263AD /* Pods-FJFramework.debug.xcconfig */,
+				549AF5513E363785BF35EFAB /* Pods-FJFramework.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AE758EFE1F05DE380023DD2A = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +102,8 @@
 				AE758F231F05DE380023DD2A /* FJFrameworkTests */,
 				AE758F2E1F05DE380023DD2A /* FJFrameworkUITests */,
 				AE758F081F05DE380023DD2A /* Products */,
+				5DF7CA34661D2A1B70F9440B /* Pods */,
+				5A9A6277F4F17976F53A9681 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE758F341F05DE380023DD2A /* Build configuration list for PBXNativeTarget "FJFramework" */;
 			buildPhases = (
+				3B4CB1F3102D7CC5EB9FEBD9 /* [CP] Check Pods Manifest.lock */,
 				AE758F031F05DE380023DD2A /* Sources */,
 				AE758F041F05DE380023DD2A /* Frameworks */,
 				AE758F051F05DE380023DD2A /* Resources */,
+				ED6CEEA83BD0FE264ED19741 /* [CP] Embed Pods Frameworks */,
+				AF7866F88359658DF770A214 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -261,6 +288,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B4CB1F3102D7CC5EB9FEBD9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AF7866F88359658DF770A214 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FJFramework/Pods-FJFramework-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED6CEEA83BD0FE264ED19741 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FJFramework/Pods-FJFramework-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AE758F031F05DE380023DD2A /* Sources */ = {
@@ -407,6 +482,7 @@
 		};
 		AE758F351F05DE380023DD2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85906DC20EA75F5D4CC263AD /* Pods-FJFramework.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YD4P87Q8E3;
@@ -420,6 +496,7 @@
 		};
 		AE758F361F05DE380023DD2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 549AF5513E363785BF35EFAB /* Pods-FJFramework.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YD4P87Q8E3;
