@@ -27,10 +27,10 @@
 		AE965C6A1F06363A00A99F14 /* NSString+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE965C691F06363A00A99F14 /* NSString+Tool.m */; };
 		AE965C6D1F0636D900A99F14 /* UILabel+FJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AE965C6C1F0636D900A99F14 /* UILabel+FJExtension.m */; };
 		AE965C701F06385900A99F14 /* UIView+FJHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = AE965C6F1F06385900A99F14 /* UIView+FJHUD.m */; };
-		AE965C731F063B3400A99F14 /* FJReceivedMemoryWarningManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AE965C721F063B3400A99F14 /* FJReceivedMemoryWarningManager.m */; };
 		AE965C7A1F06468500A99F14 /* FJNetPort.m in Sources */ = {isa = PBXBuildFile; fileRef = AE965C791F06468500A99F14 /* FJNetPort.m */; };
 		AE965C7E1F0647B900A99F14 /* FJNetTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE965C7D1F0647B900A99F14 /* FJNetTool.m */; };
-		AE965C811F0654D200A99F14 /* FJAppSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = AE965C801F0654D200A99F14 /* FJAppSetting.m */; };
+		AE965D381F09D5B600A99F14 /* FJAppSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = AE965D351F09D5B600A99F14 /* FJAppSetting.m */; };
+		AE965D391F09D5B600A99F14 /* FJReceivedMemoryWarningManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AE965D371F09D5B600A99F14 /* FJReceivedMemoryWarningManager.m */; };
 		CC1FF685BCE80E6E8C4E55EB /* libPods-FJFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20209CF3C1AB50E04B92AA48 /* libPods-FJFramework.a */; };
 /* End PBXBuildFile section */
 
@@ -98,14 +98,14 @@
 		AE965C6C1F0636D900A99F14 /* UILabel+FJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+FJExtension.m"; sourceTree = "<group>"; };
 		AE965C6E1F06385900A99F14 /* UIView+FJHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FJHUD.h"; sourceTree = "<group>"; };
 		AE965C6F1F06385900A99F14 /* UIView+FJHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FJHUD.m"; sourceTree = "<group>"; };
-		AE965C711F063B3400A99F14 /* FJReceivedMemoryWarningManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJReceivedMemoryWarningManager.h; sourceTree = "<group>"; };
-		AE965C721F063B3400A99F14 /* FJReceivedMemoryWarningManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJReceivedMemoryWarningManager.m; sourceTree = "<group>"; };
 		AE965C791F06468500A99F14 /* FJNetPort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJNetPort.m; sourceTree = "<group>"; };
 		AE965C7B1F06469E00A99F14 /* FJNetPort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FJNetPort.h; sourceTree = "<group>"; };
 		AE965C7C1F0647B900A99F14 /* FJNetTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJNetTool.h; sourceTree = "<group>"; };
 		AE965C7D1F0647B900A99F14 /* FJNetTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJNetTool.m; sourceTree = "<group>"; };
-		AE965C7F1F0654D200A99F14 /* FJAppSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJAppSetting.h; sourceTree = "<group>"; };
-		AE965C801F0654D200A99F14 /* FJAppSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJAppSetting.m; sourceTree = "<group>"; };
+		AE965D341F09D5B600A99F14 /* FJAppSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJAppSetting.h; sourceTree = "<group>"; };
+		AE965D351F09D5B600A99F14 /* FJAppSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJAppSetting.m; sourceTree = "<group>"; };
+		AE965D361F09D5B600A99F14 /* FJReceivedMemoryWarningManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJReceivedMemoryWarningManager.h; sourceTree = "<group>"; };
+		AE965D371F09D5B600A99F14 /* FJReceivedMemoryWarningManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJReceivedMemoryWarningManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +231,10 @@
 		AE965C341F06017000A99F14 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				AE965D341F09D5B600A99F14 /* FJAppSetting.h */,
+				AE965D351F09D5B600A99F14 /* FJAppSetting.m */,
+				AE965D361F09D5B600A99F14 /* FJReceivedMemoryWarningManager.h */,
+				AE965D371F09D5B600A99F14 /* FJReceivedMemoryWarningManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -239,10 +243,6 @@
 			isa = PBXGroup;
 			children = (
 				AE965C3B1F0602A000A99F14 /* FJNetTool */,
-				AE965C711F063B3400A99F14 /* FJReceivedMemoryWarningManager.h */,
-				AE965C721F063B3400A99F14 /* FJReceivedMemoryWarningManager.m */,
-				AE965C7F1F0654D200A99F14 /* FJAppSetting.h */,
-				AE965C801F0654D200A99F14 /* FJAppSetting.m */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -525,7 +525,9 @@
 				AE965C4D1F0620AC00A99F14 /* FJBaseModel.m in Sources */,
 				AE965C531F06239A00A99F14 /* UIControl+FJTouchInterval.m in Sources */,
 				AE965C5B1F06278300A99F14 /* UIView+FJExtensionFrame.m in Sources */,
+				AE965D391F09D5B600A99F14 /* FJReceivedMemoryWarningManager.m in Sources */,
 				AE758F0F1F05DE380023DD2A /* AppDelegate.m in Sources */,
+				AE965D381F09D5B600A99F14 /* FJAppSetting.m in Sources */,
 				AE965C6A1F06363A00A99F14 /* NSString+Tool.m in Sources */,
 				AE965C6D1F0636D900A99F14 /* UILabel+FJExtension.m in Sources */,
 				AE758F0C1F05DE380023DD2A /* main.m in Sources */,
@@ -533,8 +535,6 @@
 				AE965C5E1F062B0400A99F14 /* NSString+FJPredicate.m in Sources */,
 				AE965C411F06033300A99F14 /* FJBaseNavigationController.m in Sources */,
 				AE965C3E1F0602E900A99F14 /* FJBaseViewController.m in Sources */,
-				AE965C811F0654D200A99F14 /* FJAppSetting.m in Sources */,
-				AE965C731F063B3400A99F14 /* FJReceivedMemoryWarningManager.m in Sources */,
 				AE965C701F06385900A99F14 /* UIView+FJHUD.m in Sources */,
 				AE965C611F0633D700A99F14 /* UIImage+FJExtension.m in Sources */,
 			);
