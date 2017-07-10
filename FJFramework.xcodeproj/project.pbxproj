@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE1EBA8D1F1322D500C5B7AD /* FJWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1EBA8C1F1322D500C5B7AD /* FJWebViewController.m */; };
 		AE758F0C1F05DE380023DD2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE758F0B1F05DE380023DD2A /* main.m */; };
 		AE758F0F1F05DE380023DD2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE758F0E1F05DE380023DD2A /* AppDelegate.m */; };
 		AE758F171F05DE380023DD2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE758F161F05DE380023DD2A /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		AE965C7E1F0647B900A99F14 /* FJNetTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE965C7D1F0647B900A99F14 /* FJNetTool.m */; };
 		AE965D381F09D5B600A99F14 /* FJAppSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = AE965D351F09D5B600A99F14 /* FJAppSetting.m */; };
 		AE965D391F09D5B600A99F14 /* FJReceivedMemoryWarningManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AE965D371F09D5B600A99F14 /* FJReceivedMemoryWarningManager.m */; };
+		AE965D3D1F09DD1A00A99F14 /* MSWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = AE965D3C1F09DD1A00A99F14 /* MSWeakTimer.m */; };
 		CC1FF685BCE80E6E8C4E55EB /* libPods-FJFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20209CF3C1AB50E04B92AA48 /* libPods-FJFramework.a */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +57,8 @@
 		20209CF3C1AB50E04B92AA48 /* libPods-FJFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FJFramework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		549AF5513E363785BF35EFAB /* Pods-FJFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FJFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-FJFramework/Pods-FJFramework.release.xcconfig"; sourceTree = "<group>"; };
 		85906DC20EA75F5D4CC263AD /* Pods-FJFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FJFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FJFramework/Pods-FJFramework.debug.xcconfig"; sourceTree = "<group>"; };
+		AE1EBA8B1F1322D500C5B7AD /* FJWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJWebViewController.h; sourceTree = "<group>"; };
+		AE1EBA8C1F1322D500C5B7AD /* FJWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJWebViewController.m; sourceTree = "<group>"; };
 		AE758F071F05DE380023DD2A /* FJFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FJFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE758F0B1F05DE380023DD2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AE758F0D1F05DE380023DD2A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 		AE965D351F09D5B600A99F14 /* FJAppSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJAppSetting.m; sourceTree = "<group>"; };
 		AE965D361F09D5B600A99F14 /* FJReceivedMemoryWarningManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJReceivedMemoryWarningManager.h; sourceTree = "<group>"; };
 		AE965D371F09D5B600A99F14 /* FJReceivedMemoryWarningManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJReceivedMemoryWarningManager.m; sourceTree = "<group>"; };
+		AE965D3B1F09DD1A00A99F14 /* MSWeakTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSWeakTimer.h; sourceTree = "<group>"; };
+		AE965D3C1F09DD1A00A99F14 /* MSWeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSWeakTimer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +256,7 @@
 		AE965C361F06017000A99F14 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				AE965D3A1F09DD1A00A99F14 /* MSWeakTimer */,
 				AE965C461F061BC600A99F14 /* Extensions */,
 			);
 			path = Tool;
@@ -265,6 +272,8 @@
 		AE965C381F06019200A99F14 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				AE1EBA8B1F1322D500C5B7AD /* FJWebViewController.h */,
+				AE1EBA8C1F1322D500C5B7AD /* FJWebViewController.m */,
 				AE965C3C1F0602E900A99F14 /* FJBaseViewController.h */,
 				AE965C3D1F0602E900A99F14 /* FJBaseViewController.m */,
 				AE965C3F1F06033300A99F14 /* FJBaseNavigationController.h */,
@@ -328,6 +337,15 @@
 				AE965C6F1F06385900A99F14 /* UIView+FJHUD.m */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AE965D3A1F09DD1A00A99F14 /* MSWeakTimer */ = {
+			isa = PBXGroup;
+			children = (
+				AE965D3B1F09DD1A00A99F14 /* MSWeakTimer.h */,
+				AE965D3C1F09DD1A00A99F14 /* MSWeakTimer.m */,
+			);
+			path = MSWeakTimer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -524,9 +542,11 @@
 				AE965C441F06036200A99F14 /* FJTabBarViewController.m in Sources */,
 				AE965C4D1F0620AC00A99F14 /* FJBaseModel.m in Sources */,
 				AE965C531F06239A00A99F14 /* UIControl+FJTouchInterval.m in Sources */,
+				AE1EBA8D1F1322D500C5B7AD /* FJWebViewController.m in Sources */,
 				AE965C5B1F06278300A99F14 /* UIView+FJExtensionFrame.m in Sources */,
 				AE965D391F09D5B600A99F14 /* FJReceivedMemoryWarningManager.m in Sources */,
 				AE758F0F1F05DE380023DD2A /* AppDelegate.m in Sources */,
+				AE965D3D1F09DD1A00A99F14 /* MSWeakTimer.m in Sources */,
 				AE965D381F09D5B600A99F14 /* FJAppSetting.m in Sources */,
 				AE965C6A1F06363A00A99F14 /* NSString+Tool.m in Sources */,
 				AE965C6D1F0636D900A99F14 /* UILabel+FJExtension.m in Sources */,

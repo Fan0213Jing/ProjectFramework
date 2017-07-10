@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface FJBaseViewController : UIViewController
+- (void)setUpNavigationBarWithTransparent:(BOOL)transparent;
 
+- (void)setUpLeftBackButton;
 @end

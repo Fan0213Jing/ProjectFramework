@@ -23,6 +23,8 @@ UIView * _shawdowImage;
     
     self.isNeedTransparent = NO;
     self.view.backgroundColor = [UIColor colorWithHexString:@"ebebeb"];
+    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithHexString:@"FF6347"]];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18],NSForegroundColorAttributeName:[UIColor whiteColor]}];
 }
 - (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
